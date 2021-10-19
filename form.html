@@ -1,0 +1,71 @@
+<html lang="en">
+  <head>
+        <title> Tugas Form Web Statis </title>
+		<style>
+			body {
+       background: -webkit-linear-gradient(bottom, #513486, #b04dc4);
+       background-repeat: no-repeat;
+		}
+			#card {
+        background: #d486ce;
+        border-radius: 8px;
+        box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.65);
+        height: 300px;
+        margin: 6rem auto 8.1rem auto;
+        width: 629px;
+		}
+		</style>
+  </head>
+  <body>
+        <div id="card">
+                <div id="card-content">
+                                <form action="#" method="POST" onsubmit="validasi()">
+                                    <center><br><h1><font color="#000000">Form Registrasi pedaftaran</font></h1>
+                                    <hr color="blue" height="2px">
+                            <center><table border="0" width="400">
+     
+    <!-- Form -->
+        
+                            <table>
+                                <tr>
+                                    <td>Nama lengkap</td>
+						            <td>:</td>
+                                    <td><input type="text" name="nama" id="nama" /></td>
+                                </tr>    
+                                <tr>
+                                    <td>Email</td>
+                                    <td>:</td>
+                                    <td><input type="email" name="email" id="email" /></td>
+                                </tr>
+                                <tr>
+                                    <td>Alamat</td>
+                                    <td>:</td>
+                                    <td><textarea cols="40" rows="5" name="alamat" id="alamat" color="white"></textarea></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input class="btn btn-outline-warning" type="submit" value="Daftar" class="tombol">
+                                    </td> 
+                                </tr>
+
+                            </table>
+                    </form>
+                        
+                            
+                </div>
+            </body>
+            <script type="text/javascript">
+                function validasi() {
+                    var nama = document.getElementById("nama").value;
+                    var email = document.getElementById("email").value;
+                    var alamat = document.getElementById("alamat").value;
+                    if (nama != "" && email!="" && alamat !="") {
+                        alert('Data berhasil dikirim :) ');
+                    }else{
+                        alert('Anda harus mengisi data dengan lengkap !');
+                    }
+                }
+            </script>
+</html>
+
+            
